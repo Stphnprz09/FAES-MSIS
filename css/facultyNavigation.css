@@ -1,0 +1,42 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--navigation-bg);
+    padding: 1rem;
+}
+
+.school-logo {
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+}
+
+.school-logo img {
+    width: 70px;
+    height: 50px;
+    margin-right: 0.5rem;
+}
+
+.school-logo h5 {
+    display: flex;
+    align-items: center;
+    font-family: var(--abhaya-font);
+    color: var(--white-bg);
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10rem;
+}
+
+.nav-links li,
+a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 3rem;
+    text-decoration: none;
+    color: var(--white-bg);
+    font-size: 1rem;
+}

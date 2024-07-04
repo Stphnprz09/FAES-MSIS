@@ -1,0 +1,115 @@
+.container {
+    background-image: var(--school-background);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.full-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    position: relative;
+}
+
+.left-container {
+    grid-area: 1 / 1 / 6 / 4;
+    padding: 7rem 0 7rem 0;
+}
+
+.left-container h2 {
+    color: var(--white-bg);
+    font-family: var(--poppins-font);
+    font-size: 4rem;
+    text-align: center;
+}
+
+.right-container {
+    grid-area: 1 / 4 / 6 / 6;
+    background: linear-gradient(to right, rgba(68, 182, 57, 0.74), rgba(68, 182, 57, 0.74));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.right-container img {
+    padding-top: 1rem;
+    width: 10rem;
+    height: 8rem;
+}
+
+.right-container .text1 {
+    font-family: var(--inter-font);
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: var(--white-bg);
+    padding: 2rem 0 3rem 0;
+}
+
+/* log in form css */
+
+.login-form {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 2px solid var(--white-bg);
+    outline: none;
+    font-size: 1rem;
+    background: transparent;
+    color: var(--white-bg);
+}
+
+.form-label {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: var(--white-bg);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.form-input:focus+.form-label,
+.form-input:valid+.form-label {
+    top: -10px;
+    left: 0;
+    font-size: 12px;
+    color: var(--white-bg);
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.submit-button {
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--inter-font);
+    font-weight: 500;
+    width: 50%;
+    padding: 1rem 0 1rem 0;
+    border: none;
+    background-color: var(--button-bg);
+    color: var(--black-bg);
+    font-size: 1;
+    cursor: pointer;
+}

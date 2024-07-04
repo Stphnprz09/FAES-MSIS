@@ -1,0 +1,35 @@
+
+.tables {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+.names{
+    width: 90%;
+    background-color: #FCFFFC;
+}
+
+.names,th,tr,td .month,.number{
+    border: 0.1px inset #0D8A01A1;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+
+.student{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 3rem;
+}
+
+
+.number input[type="number"] {
+    text-align: center;
+    margin-left: 1rem;
+    border: none;
+}
