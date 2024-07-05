@@ -1,0 +1,120 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+
+.calendar-logo{
+    display: flex;
+    flex-direction: row;
+    margin-left: 1rem;
+}
+
+.calendar-logo img {
+    width: 120px;
+    height: 100px;
+    margin-top: 3rem;
+    margin-right: 0.5rem;
+}
+
+.calendar-header{
+    position: relative;
+    margin-top: 1.5rem;
+    margin-left: 15rem;
+}
+.calendar-header .school{
+    position: relative;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    color: green;
+
+}
+
+.calendar-container {
+    width: 90%;
+    height: 100%;
+    position: relative;
+    margin-left: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 3rem;
+    padding-top: 0;
+}
+
+.dropdowns {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+
+/*********************DROPDWONS*******************/
+#year-dropdown{
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+#month-dropdown{
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+#today-button{
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+
+/*****************HOVER EFFECT******************/
+#year-dropdown:hover{
+    background-color: rgba(103, 255, 88, 0.63);
+}
+#month-dropdown:hover{
+    background-color: rgba(103, 255, 88, 0.63);
+}
+#today-button:hover{
+    background-color: rgba(103, 255, 88, 0.63);
+}
+
+#calendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0;
+}
+
+.day {
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+}
+
+.day-header {
+    font-weight: bold;
+    color: white;
+    background-color: green;
+}
+
+.day.sunday, .day.saturday {
+    color: orange;
+}
