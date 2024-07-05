@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/global.css">
     <link rel="stylesheet" href="/css/facultyNavigation.css">
+    <link rel="stylesheet" href="/css/calendar.css">
     <title>Faculty | Home</title>
 </head>
 
@@ -32,6 +33,26 @@
 
         <!-- BEGINO PART -->
         <!-- start your code here -->
+        <div class="calendar-container">
+            <di class="row">
+                <div class="calendar-logo">
+                    <img src="/assets/logo.png" alt="FAES Logo">
+                </div>
+                
+                <div class="calendar-header">
+                    <h2 class="school">FILINVEST ALABANG ELEMENTARY SCHOOL</h2>
+                    <h2>ACADEMIC CALENDAR</h2>
+                </div>
+            </di>
+
+            <div class="dropdowns">
+                <select id="year-dropdown"></select>
+                <select id="month-dropdown"></select>
+                <button id="today-button">Today</button>
+            </div>
+            <div id="calendar"></div>
+        </div>
+        <script src="/js/calendar.js"></script>
     </div>
 </body>
 
