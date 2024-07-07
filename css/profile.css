@@ -1,0 +1,99 @@
+.main-container{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.profile h2 {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .profile-border {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    text-align: center;
+  }
+  
+  .edit-profile i {
+    margin-left: 50px;
+  }
+  
+  #setting-icon {
+    margin-left: 70px;
+  }
+  
+  .full-name {
+    margin-bottom: 10px;
+  }
+  
+  h4 {
+    margin-bottom: 20px;
+  }
+  
+  /*INFORMATION */
+  .information-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  h2 {
+    padding-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .information-section {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .information-section label {
+    width: 170px;
+    margin-right: 10px;
+  }
+  
+  .information-section input,
+  .information-section textarea {
+    flex: 1;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+   font-family: Inter;
+  }
+  
+  .information-section textarea {
+    height: 80px;
+    resize: none;
+  }
+  
+  .button-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .button-section button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+  }
+  
+  .button-section button:first-child {
+    background-color: white;
+    color: black;
+    border: solid 1px;
+  }
+  
+  .button-section button:last-child {
+    background-color: #44B639;
+    color: #fff;
+  }
