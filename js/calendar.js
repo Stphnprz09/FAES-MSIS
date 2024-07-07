@@ -3,12 +3,30 @@ document.addEventListener('DOMContentLoaded', function() {
     const monthDropdown = document.getElementById('month-dropdown');
     const todayButton = document.getElementById('today-button');
     const calendar = document.getElementById('calendar');
+    const modal = document.getElementById('holidayModal');
+    const span = document.getElementsByClassName('close')[0];
+    const holidayDescription = document.getElementById('holidayDescription');
 
-    const currentYear = new Date().getFullYear();
-    const currentMonth = new Date().getMonth();
-    
+    const today = new Date();
+    const currentYear = today.getFullYear();
+    const currentMonth = today.getMonth();
+    const currentDate = today.getDate();
+
+    // List of holidays
+    const holidays = [
+        { date: '01-01', name: 'New Year\'s Day' },
+        { date: '04-09', name: 'Araw ng Kagitingan' },
+        { date: '05-01', name: 'Labor Day' },
+        { date: '06-12', name: 'Independence Day' },
+        { date: '08-21', name: 'Ninoy Aquino Day' },
+        { date: '11-01', name: 'All Saints\' Day' },
+        { date: '12-25', name: 'Christmas Day' },
+        { date: '12-30', name: 'Rizal Day' }
+        // add more holidays
+    ];
+
     // Populate year dropdown
-    for (let year = currentYear - 50; year <= currentYear + 50; year++) {
+    for (let year = currentYear - 24; year <= currentYear; year++) {
         const option = document.createElement('option');
         option.value = year;
         option.textContent = year;
@@ -67,6 +85,22 @@ document.addEventListener('DOMContentLoaded', function() {
             const dayOfWeek = (firstDayOfMonth + day - 1) % 7;
             if (dayOfWeek === 0) dayCell.classList.add('sunday');
             if (dayOfWeek === 6) dayCell.classList.add('saturday');
+            if (year === currentYear && month === currentMonth && day === currentDate) {
+                dayCell.classList.add('today');
+            }
+
+            // check if theres holiday
+            const formattedDate = `${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+            const holiday = holidays.find(h => h.date === formattedDate);
+            if (holiday) {
+                dayCell.classList.add('holiday');
+                dayCell.title = holiday.name;
+                dayCell.addEventListener('click', () => {
+                    holidayDescription.textContent = `Holiday: ${holiday.name}`;
+                    modal.style.display = 'block';
+                });
+            }
+
             calendar.appendChild(dayCell);
         }
     }
@@ -85,6 +119,17 @@ document.addEventListener('DOMContentLoaded', function() {
         monthDropdown.value = currentMonth;
         generateCalendar(currentYear, currentMonth);
     });
+
+    // Close modal
+    span.onclick = function() {
+        modal.style.display = 'none';
+    };
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = 'none';
+        }
+    };
 
     // Initial calendar generation
     generateCalendar(currentYear, currentMonth);

@@ -27,7 +27,7 @@ body {
 .calendar-header{
     position: relative;
     margin-top: 1.5rem;
-    margin-left: 15rem;
+    margin-left: 8rem;
 }
 .calendar-header .school{
     position: relative;
@@ -45,7 +45,7 @@ body {
     margin-top: 2rem;
     margin-bottom: 3rem;
     text-align: center;
-    background-color: whitesmoke;
+    background-color: #F2FFED;
     padding: 3rem;
     padding-top: 0;
 }
@@ -68,7 +68,7 @@ body {
     font-size: 1.5rem;
     border: none;
     border-radius: 10px;
-    background-color: whitesmoke;
+    background-color: #F2FFED;
 }
 #month-dropdown{
     position: relative;
@@ -76,7 +76,7 @@ body {
     font-size: 1.4rem;
     border: none;
     border-radius: 10px;
-    background-color: whitesmoke;
+    background-color: #F2FFED;
 }
 #today-button{
     position: relative;
@@ -84,7 +84,7 @@ body {
     font-size: 1.4rem;
     border: none;
     border-radius: 10px;
-    background-color: whitesmoke;
+    background-color: #F2FFED;;
 }
 
 /*****************HOVER EFFECT******************/
@@ -117,4 +117,57 @@ body {
 
 .day.sunday, .day.saturday {
     color: orange;
+}
+
+.today {
+    background-color: yellow; 
+    font-weight: bold; 
+}
+
+.day.holiday {
+    background-color: #FFD700; 
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.day.holiday:hover {
+    background-color: #FFA500; 
+}
+
+/* Modals for holidays */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto; 
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 50%; 
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color:  rgba(103, 255, 88, 0.63);
+    text-decoration: none;
+    cursor: pointer;
 }

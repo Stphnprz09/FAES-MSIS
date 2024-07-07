@@ -28,10 +28,10 @@
              </ul>
          </nav>
 
-         <!-- BEGINO PART -->
+         <!-- BEGIN PART -->
          <!-- start your code here -->
          <div class="calendar-container">
-            <di class="row">
+            <div class="row">
                 <div class="calendar-logo">
                     <img src="/assets/logo.png" alt="FAES Logo">
                 </div>
@@ -40,7 +40,7 @@
                     <h2 class="school">FILINVEST ALABANG ELEMENTARY SCHOOL</h2>
                     <h2>ACADEMIC CALENDAR</h2>
                 </div>
-            </di>
+            </div>
 
             <div class="dropdowns">
                 <select id="year-dropdown"></select>
@@ -49,6 +49,15 @@
             </div>
             <div id="calendar"></div>
         </div>
+
+        <!-- Modal Structure -->
+        <div id="holidayModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <p id="holidayDescription"></p>
+            </div>
+        </div>
+
         <script src="/js/calendar.js"></script>
      </div>
 </body>
