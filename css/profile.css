@@ -1,64 +1,70 @@
 .main-container{
   padding-top: 20px;
-  
   width: 30vw;
   margin: auto;
-  font-family: Inter;
+  font-family: var(--inter-font);
+  height: auto;
 }
 
-.header{
-  position: relative;
-  text-align: center;
-}
-
-.row{
-  display: flex;
-  flex-wrap: wrap;
-}
 
 /*******************PROFILE CONTAINER*******************/
-.profile-container{
-  position: relative;
-  margin-top: 1rem;
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
   border-radius: 15px;
   border-top: solid 1px #f3f3f3;
   border-right: solid 1.5px #dddddde2;
   border-bottom: solid 2px #ccc;
   border-left: solid 1.5px #dddddde2;
+  height: 25vh;
 }
 
-.profile-image img{
-  position: relative;
-  width: 5rem;
-  height: 5rem;
-  margin: 1rem 1rem;
+.card img {
+  width: 7rem;
+  height: 7rem;
+  margin: 0 1rem;
+  border-radius: 20px;
 }
 
-.profile-name .name{
+.profile-name {
   width: 15rem;
-  word-wrap: break-word;
+  position: relative;
+  top: -1rem;
 }
 
-.edit-container{
-  height: 2rem;
+.name {
+  font-family: var(--inter-font);
+  font-weight: 500;
 }
 
-.profile-name .text-edit{
+.row {
+  display: flex;
+  flex-direction: row;
+  top: -2rem;
   color: #4a4a4a;
 }
-.profile-name .fa-pen-to-square{
-  margin-left: 1rem;
+
+.row p {
+  padding-right: 1rem;
 }
 
-.profile-container .fa-gear{
-  font-size: 1.5rem;
-  margin-top: 2.8rem;
-  color: black;
-}
 
-.setting-icon{
-  /* margin-left: 1rem; */
-  text-align: center;
+.fa-gear {
+  color: var(--black-bg);
 }
 
   
@@ -118,10 +124,12 @@
     color: black;
     border: solid 1px;
     font-size: 1.2rem;
+    margin-bottom: 1rem;
   }
   
   .button-section button:last-child {
     background-color: #44B639;
     color: #fff;
     font-size: 1.2rem;
+    margin-bottom: 1rem;
   }

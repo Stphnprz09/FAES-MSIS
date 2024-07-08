@@ -1,68 +1,65 @@
 .main-container{
-    padding-top: 20px;
-    
-    width: 30vw;
-    margin: auto;
-    font-family: Inter;
+  padding-top: 20px;
+  width: 30vw;
+  margin: auto;
+  font-family: var(--inter-font);
+  height: auto;
   }
   
-  .header{
-    position: relative;
-    text-align: center;
-  }
-  
-  .row{
-    display: flex;
-    flex-wrap: wrap;
-  }
   
   /*******************PROFILE CONTAINER*******************/
-  .profile-container{
-    position: relative;
-    margin-top: 1rem;
+  .header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .card {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     border-radius: 15px;
     border-top: solid 1px #f3f3f3;
     border-right: solid 1.5px #dddddde2;
     border-bottom: solid 2px #ccc;
     border-left: solid 1.5px #dddddde2;
+    height: 25vh;
   }
   
-  .profile-image img{
-    position: relative;
-    width: 5rem;
-    height: 5rem;
-    margin: 1rem 1rem;
+  .card img {
+    width: 7rem;
+    height: 7rem;
+    margin: 0 1rem;
+    border-radius: 20px;
   }
   
-  .profile-name .name{
+  .profile-name {
     width: 15rem;
-    margin-top: 1rem;
-    word-wrap: break-word;
+    position: relative;
   }
   
-  .edit-container{
-    margin-top: 1rem;
-    height: 2rem;
+  .name {
+    font-family: var(--inter-font);
+    font-weight: 500;
+    padding-bottom: 1rem;
   }
   
-  .profile-name .text-edit{
+  .row {
+    display: flex;
+    flex-direction: row;
     color: #4a4a4a;
   }
-  .profile-name .fa-pen-to-square{
-    margin-left: 1rem;
-  }
   
-  .profile-container .fa-gear{
-    font-size: 1.5rem;
-    margin-top: 2.8rem;
-    color: black;
+  .row p {
+    padding-right: 1rem;
   }
-  
-  .setting-icon{
-    /* margin-left: 2rem; */
-    text-align: center;
-  }
-  
     
     /********************INFORMATION CONTAINER****************/
     .information-container {
