@@ -1,0 +1,58 @@
+/* dropdown */
+.dropdown-row{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.dropdown {
+    margin: 2rem 3rem 1rem 5rem;
+}
+
+span {
+    font-family: var(--inter-font);
+    font-weight: 600;
+}
+
+select {
+    padding: 0.2rem 5rem;
+    background-color: #FAF7F7;
+}
+
+/* tables */
+.tables {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+table {
+    width: 90%;
+    background-color: #FCFFFC;
+}
+
+table,th,tr,td .month,.grades{
+    border: 0.1px inset #0D8A01A1;
+    border-collapse: collapse;
+    padding: 0.5rem;
+}
+
+.student{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 3rem;
+}
+
+.grades{
+    text-align: center;
+}
+
+.grades input[type="number"] {
+    text-align: center;
+    margin-left: 1rem;
+    border: none;
+}
