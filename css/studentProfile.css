@@ -1,0 +1,127 @@
+.main-container{
+  padding-top: 20px;
+  
+  width: 30vw;
+  margin: auto;
+  font-family: Inter;
+}
+
+.header{
+  position: relative;
+  text-align: center;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/*******************PROFILE CONTAINER*******************/
+.profile-container{
+  position: relative;
+  margin-top: 1rem;
+  border-radius: 15px;
+  border-top: solid 1px #f3f3f3;
+  border-right: solid 1.5px #dddddde2;
+  border-bottom: solid 2px #ccc;
+  border-left: solid 1.5px #dddddde2;
+}
+
+.profile-image img{
+  position: relative;
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem 1rem;
+}
+
+.profile-name .name{
+  width: 15rem;
+  word-wrap: break-word;
+}
+
+.edit-container{
+  height: 2rem;
+}
+
+.profile-name .text-edit{
+  color: #4a4a4a;
+}
+.profile-name .fa-pen-to-square{
+  margin-left: 1rem;
+}
+
+.profile-container .fa-gear{
+  font-size: 1.5rem;
+  margin-top: 2.8rem;
+  color: black;
+}
+
+.setting-icon{
+  margin-left: 2rem;
+  text-align: center;
+}
+
+  
+  /********************INFORMATION CONTAINER****************/
+  .information-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  
+  h2 {
+    padding-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .information-section {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .information-section label {
+    width: 13rem;
+    font-weight: 500;
+  }
+  
+  .information-section input,
+  .information-section textarea {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: Inter;
+  }
+  
+  .information-section textarea {
+    height: 5rem;
+    resize: none;
+  }
+  
+  .button-section {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .button-section button {
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+  }
+  
+  .button-section button:first-child {
+    background-color: white;
+    color: black;
+    border: solid 1px;
+    font-size: 1.2rem;
+  }
+  
+  .button-section button:last-child {
+    background-color: #44B639;
+    color: #fff;
+    font-size: 1.2rem;
+  }
