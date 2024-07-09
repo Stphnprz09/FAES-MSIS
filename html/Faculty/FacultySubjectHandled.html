@@ -6,11 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/css/global.css">
-    <link rel="stylesheet" href="/css/facultyNavigation.css">
-    <link rel="stylesheet" href="/css/facultySubjectHandled.css">
-    <title>Faculty | subject Handled</title>
-
-    
+    <link rel="stylesheet" href="/css/Faculty/facultyNavigation.css">
+    <link rel="stylesheet" href="/css/Faculty/facultySubjectHandled.css">
+    <title>Faculty | Subject Handled</title>
 </head>
 
 <body>
@@ -34,25 +32,26 @@
             </ul>
         </nav>
 
-        <!-- RIZON PART -->
+        <!-- Subject and Section Dropdowns -->
         <div class="dropdown-row">
             <div class="dropdown">
                 <span>Subject</span>
                 <select name="subject" id="subject">
                     <option>English</option>
                     <option>Filipino</option>
-                    <option>Matheamtics</option>
+                    <option>Mathematics</option>
                     <option>Science</option>
                 </select>
             </div>
             <div class="dropdown">
                 <span>Section</span>
                 <select name="section" id="section">
-                    
+                    <!-- Section options here -->
                 </select>
             </div>
         </div>
 
+        <!-- Tables -->
         <div class="tables">
             <table>
                 <thead>
@@ -68,84 +67,13 @@
                 <tbody>
                     <tr>
                         <td class="student">Student 1</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
+                        <td class="grades"><input type="number" name="grade" class="grade-input" min="75" max="100"></td>
+                        <td class="grades"><input type="number" name="grade" class="grade-input" min="75" max="100"></td>
+                        <td class="grades"><input type="number" name="grade" class="grade-input" min="75" max="100"></td>
+                        <td class="grades"><input type="number" name="grade" class="grade-input" min="75" max="100"></td>
+                        <td class="grades"><input type="number" name="final-grade" class="final-grade" readonly></td>
                     </tr>
-                    <tr>
-                        <td class="student">Student 2</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td class="student">Student 3</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td class="student">Student 4</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td class="student">Student 5</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td class="student">Student 6</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td class="student">Student 7</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td class="student">Student 8</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td class="student">Student 9</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td class="student">Student 10</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                    </tr>
+                    <!-- Repeat for other students... -->
                 </tbody>
             </table>
             <br><br>
@@ -163,88 +91,16 @@
                 <tbody>
                     <tr>
                         <td class="student">Student 1</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td class="student">Student 2</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td class="student">Student 3</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td class="student">Student 4</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td class="student">Student 5</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td class="student">Student 6</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td class="student">Student 7</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td class="student">Student 8</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td class="student">Student 9</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                    </tr>
-                    <tr>
-                        <td class="student">Student 10</td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
-                        <td class="grades"><input type="number" name="grade" id="grade" min="75" max="100"></td>
+                        <td class="grades"><input type="number" name="grade" class="grade-input" min="75" max="100"></td>
+                        <td class="grades"><input type="number" name="grade" class="grade-input" min="75" max="100"></td>
+                        <td class="grades"><input type="number" name="grade" class="grade-input" min="75" max="100"></td>
+                        <td class="grades"><input type="number" name="grade" class="grade-input" min="75" max="100"></td>
+                        <td class="grades"><input type="number" name="final-grade" class="final-grade" readonly></td>
                     </tr>
                 </tbody>
             </table>
         </div>
     </div>
 </body>
-
+<script src="/js/computeGrades.js"></script>
 </html>

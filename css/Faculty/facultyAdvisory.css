@@ -94,7 +94,7 @@ width: 37rem;
     }
     
     .behaviorsheet .quarter-column {
-        width: 60px; /* Adjust this value as needed */
+        width: 60px;
     }
 
     .behaviorsheet td{
@@ -112,3 +112,10 @@ width: 37rem;
         margin-left: 0.5rem;
     }
    
+    /* button */
+
+    button {
+        border: none;
+        background-color: #FCFFFC;
+        cursor: pointer;
+    }
