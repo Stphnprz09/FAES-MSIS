@@ -90,6 +90,7 @@ width: 37rem;
         width: 800.6px;
         height: 419.4px;
         border-collapse: collapse;
+        margin-bottom: 1rem;
     }
     
     .behaviorsheet .quarter-column {
@@ -100,4 +101,14 @@ width: 37rem;
         padding-left: 0.5rem;
     }
 
+    /* dropdown */
+
+    select {
+        border: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+            appearance: none;
+        cursor: pointer;
+        margin-left: 0.5rem;
+    }
    
